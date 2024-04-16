@@ -1,0 +1,9 @@
+{
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true,
+	"prettier.useTabs": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always"
+	},
+	"eslint.validate": ["javascript"]
+}

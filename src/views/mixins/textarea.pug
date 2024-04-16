@@ -1,0 +1,13 @@
+mixin textarea(id, name, placeholder, type, label, oninput)
+  .form-group 
+    .form-col-label 
+      label(for=id)= label
+    .form-col-input 
+      textarea.form-control(
+        name=name,
+        id=id 
+        placeholder=placeholder 
+        cols="30",
+        rows="10"
+        oninput=oninput
+      ) 

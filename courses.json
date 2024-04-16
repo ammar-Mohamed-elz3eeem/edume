@@ -1,0 +1,22 @@
+{
+  "title": "Learn Web development",
+  "description": "This course is designed to let you learn all the skills you need to be a perfect web developer",
+  "lessons": [
+    {
+      "title": "Learn HTML",
+      "content": "In this section you will learn the fundamental of web development and how to design a very simple website using html as the markup language"
+    },
+    {
+      "title": "Learn CSS",
+      "content": "In this section you will use the styling blocks to style your pages you build in the previous section"
+    },
+    {
+      "title": "Learn JavaScript",
+      "content": "In this section we will dive into the interactivty of web pages and how to make your webpages respond to user actions"
+    },
+    {
+      "title": "Interactive web templates",
+      "content": "This section is all about practing what we just leanrt in HTML & CSS & JavaScript lessons we will do so by building interactive & responsive website designs"
+    }
+  ]
+}

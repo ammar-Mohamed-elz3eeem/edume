@@ -1,0 +1,36 @@
+### Login Endpoint
+POST http://localhost:5000/auth/login HTTP/1.1
+content-type: application/json
+
+{
+  "username": "ammar",
+  "password": "ammar"
+}
+
+### Current Logged In User
+
+POST http://localhost:5000/auth/me HTTP/1.1
+
+### Register Endpoint
+
+POST http://localhost:5000/auth/register HTTP/1.1
+content-type: application/json
+
+{
+  "username": "ammar",
+  "firstName": "mohamed",
+  "lastName": "ammar",
+  "email": "mohamed@m.com",
+  "dob": "11-28-1998",
+  "role": "admin",
+  "password": "123456",
+  "confirm_password": "123456"
+}
+
+###
+
+POST http://localhost:5000/auth/logout HTTP/1.1
+
+###
+
+GET http://localhost:5000/

@@ -1,0 +1,28 @@
+extends ../layout.pug
+
+block append styles 
+  style 
+    include ../style.css
+
+block content
+  section.py-5
+    .container
+      h2 All Courses 
+      if !courses
+        .d-flex.justify-content-between.gap-4 
+          h1 No Courses For Now
+          a(href="/courses/add")
+            button(type="button") Add New Course 
+      else 
+        .d-grid.flexible
+          each course in courses
+            p #{course.description}
+  section.py-5
+    .container
+      h2 All Users 
+      if !users 
+        h1 No Users Registered 
+      else 
+        .d-grid.flexible
+          each user in users
+            p #{user.username}

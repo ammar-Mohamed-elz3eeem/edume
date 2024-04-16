@@ -1,0 +1,61 @@
+extends ../../layout.pug
+block content 
+  h1 Welcome to our site
+  form(action="/auth/register" method="POST")
+    div 
+      label(for="userFirstName") FirstName 
+      input(
+        type="text"
+        placeholder="Enter your firstname"
+        name="firstName"
+        id="userFirstName"
+      )
+    div 
+      label(for="userLastName") Last Name 
+      input(
+        type="text"
+        placeholder="Enter your last name"
+        name="lastName"
+        id="userLastName"
+      )
+    div 
+      label(for="userLogin") Username 
+      input(
+        type="text"
+        placeholder="Enter your username"
+        name="username"
+        id="userLogin"
+      )
+    div 
+      label(for="userEmail") E-mail 
+      input(
+        type="email"
+        placeholder="Enter your e-mail"
+        name="email"
+        id="userEmail"
+      )
+    div 
+      label(for="userPass") password 
+      input(
+        type="passwprd"
+        placeholder="Enter your password"
+        name="password"
+        id="userPass"
+      )
+    div 
+      label(for="userCPassword") Confirm Password 
+      input(
+        type="password"
+        placeholder="Enter your confirm password"
+        name="confirm_password"
+        id="userCPassword"
+      )
+    div 
+      label(for="userDOB") Date Of Birth 
+      input(
+        type="date"
+        name="dob"
+        id="userDOB"
+      )
+    div 
+      input(type="submit" valud="Sign in")

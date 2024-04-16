@@ -1,0 +1,23 @@
+block header 
+  section.section 
+    .container 
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        a.navbar-brand(href="#") Edu Me
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        div.collapse.navbar-collapse#navbarSupportedContent
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href="/") Home
+            li.nav-item
+              a.nav-link(href="/courses/ui") Courses
+            if !user 
+              li.nav-item
+                a.nav-link(href="/auth/login") login 
+              li.nav-item
+                a.nav-link(href="/auth/register") Register 
+            else
+              li.nav-item
+                a.nav-link(href="/auth") Profile
+              li.nav-item
+                a.nav-link(href="/auth/logout") Logout  

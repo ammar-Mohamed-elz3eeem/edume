@@ -1,0 +1,16 @@
+block variables    
+
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css")
+    title Document
+    block styles
+    block scripts 
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" type="text/javascript") 
+  body
+    block header
+      include partials/header.pug
+    block content
+    block footer

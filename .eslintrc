@@ -1,0 +1,15 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint", "@stylistic/ts"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier",
+    "plugin:prettier/recommended"
+	],
+	"rules": {
+		"@stylistic/ts/indent": ["error", 2]
+	}
+}

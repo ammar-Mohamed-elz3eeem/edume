@@ -1,0 +1,12 @@
+mixin input(id, name, placeholder, type, label, oninput)
+  .form-group 
+    .form-col-label 
+      label(for=id)= label
+    .form-col-input 
+      input.form-control(
+        type=type
+        placeholder=placeholder
+        name=name
+        id=id
+        oninput=oninput
+      )

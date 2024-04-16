@@ -1,0 +1,15 @@
+extends ../../layout.pug
+
+block content 
+  section.py-5
+    .container
+      h2 All Courses 
+      if !courses
+        .d-flex.justify-content-between.gap-4 
+          h1 No Courses For Now
+          a(href="/courses/add")
+            button(type="button") Add New Course 
+      else 
+        .d-grid.flexible
+          each course in courses
+            p #{course.description}

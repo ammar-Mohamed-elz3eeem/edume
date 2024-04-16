@@ -1,0 +1,6 @@
+extends ../../layout.pug
+block content
+  if user && user.username
+    p Welcome user #{user.email}
+  else 
+    p you are not logged in
