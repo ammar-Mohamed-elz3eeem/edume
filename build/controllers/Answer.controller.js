@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const index_1 = require("@/models/index");
+const index_1 = require("../models/index");
 class AnswerController {
     static async addAnswer(ctx) {
         const { content, isCorrect, questionId } = ctx.request.body;

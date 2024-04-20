@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const models_1 = require("@/models");
+const models_1 = require("../models");
 class QuizController {
     static async addQuiz(ctx) {
         const { title, courseId, questions } = ctx.request.body;

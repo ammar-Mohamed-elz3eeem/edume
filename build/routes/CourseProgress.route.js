@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const router_1 = __importDefault(require("@koa/router"));
-const CourseProgress_controller_1 = __importDefault(require("@/controllers/CourseProgress.controller"));
-const requireAuth_1 = __importDefault(require("@/middlewares/requireAuth"));
+const CourseProgress_controller_1 = __importDefault(require("../controllers/CourseProgress.controller"));
+const requireAuth_1 = __importDefault(require("../middlewares/requireAuth"));
 const router = new router_1.default({ prefix: '/course-progress' });
 router
     .get('/', CourseProgress_controller_1.default.getCourseProgresses)

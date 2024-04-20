@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const models_1 = require("@/models");
+const models_1 = require("../models");
 class CourseProgressController {
     static async addCourseProgress(ctx) {
         const { userId, courseId, lessonId, completed, progressPercentage, lastAccessedAt, } = ctx.request.body;

@@ -3,8 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const User_controller_1 = __importDefault(require("@/controllers/User.controller"));
-const requireAuth_1 = __importDefault(require("@/middlewares/requireAuth"));
+const User_controller_1 = __importDefault(require("../controllers/User.controller"));
+const requireAuth_1 = __importDefault(require("../middlewares/requireAuth"));
 const router_1 = __importDefault(require("@koa/router"));
 const router = new router_1.default({
     prefix: '/users',

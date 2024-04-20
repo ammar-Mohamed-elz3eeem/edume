@@ -7,10 +7,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const sequelize_1 = require("sequelize");
 const dotenv_1 = require("dotenv");
 (0, dotenv_1.config)();
-const db_1 = __importDefault(require("@/db"));
-const index_1 = require("@/models/index");
-const index_2 = require("@/models/index");
-const index_3 = require("@/models/index");
+const db_1 = __importDefault(require("../../db"));
+const index_1 = require("../../models/index");
+const index_2 = require("../../models/index");
+const index_3 = require("../../models/index");
 describe('Test Enrollment Model', () => {
     let user1;
     let user2;

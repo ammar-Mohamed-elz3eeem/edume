@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.uploadsStorage = exports.avatarStorage = void 0;
 const multer_1 = __importDefault(require("@koa/multer"));
-const uploader_1 = __importDefault(require("@/config/uploader"));
+const uploader_1 = __importDefault(require("../config/uploader"));
 exports.avatarStorage = multer_1.default.diskStorage({
     destination: (req, file, callback) => {
         // console.log(file);

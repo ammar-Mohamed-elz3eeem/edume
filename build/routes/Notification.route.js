@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const router_1 = __importDefault(require("@koa/router"));
-const Notification_controller_1 = __importDefault(require("@/controllers/Notification.controller"));
-const requireAuth_1 = __importDefault(require("@/middlewares/requireAuth"));
+const Notification_controller_1 = __importDefault(require("../controllers/Notification.controller"));
+const requireAuth_1 = __importDefault(require("../middlewares/requireAuth"));
 const router = new router_1.default({ prefix: '/notification' });
 router
     .post('/', requireAuth_1.default, Notification_controller_1.default.addNotification)

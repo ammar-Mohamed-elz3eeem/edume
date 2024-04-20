@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const models_1 = require("@/models");
+const models_1 = require("../models");
 class ForumController {
     static async addForum(ctx) {
         const { userId, content } = ctx.request.body;

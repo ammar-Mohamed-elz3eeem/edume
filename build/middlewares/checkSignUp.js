@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const koa_passport_1 = __importDefault(require("koa-passport"));
 const bcrypt_1 = __importDefault(require("bcrypt"));
-const User_model_1 = __importDefault(require("@/models/User.model"));
+const User_model_1 = __importDefault(require("../models/User.model"));
 async function checkSignUp(ctx, next) {
     const { username, password, firstName, lastName, email, confirm_password, dob, avatarUrl, role, } = ctx.request.body;
     console.log('REQUEST BODY:', ctx.request.body);

@@ -1,5 +1,5 @@
 "use strict";
-// import imageConfig from '@/config/uploader';
+// import imageConfig from '../config/uploader';
 // import { unlink } from 'fs/promises';
 // import { v4 as uuid } from 'uuid';
 // import sharp from 'sharp';

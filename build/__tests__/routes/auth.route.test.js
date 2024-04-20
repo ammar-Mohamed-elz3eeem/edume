@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const supertest_1 = __importDefault(require("supertest"));
 const test_setup_1 = __importDefault(require("../../test_setup"));
-const db_1 = __importDefault(require("@/db"));
+const db_1 = __importDefault(require("../../db"));
 let api;
 let server;
 let agent;

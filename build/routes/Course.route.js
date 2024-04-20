@@ -3,10 +3,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const Course_controller_1 = __importDefault(require("@/controllers/Course.controller"));
-const requireAuth_1 = __importDefault(require("@/middlewares/requireAuth"));
+const Course_controller_1 = __importDefault(require("../controllers/Course.controller"));
+const requireAuth_1 = __importDefault(require("../middlewares/requireAuth"));
 const koa_router_1 = __importDefault(require("koa-router"));
-// import CourseTag from '@/models/CourseTag.model';
+// import CourseTag from '../models/CourseTag.model';
 const router = new koa_router_1.default({ prefix: '/courses' });
 router
     .delete('/:id', requireAuth_1.default, Course_controller_1.default.deleteCourses)

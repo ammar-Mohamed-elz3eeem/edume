@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const models_1 = require("@/models");
+const models_1 = require("../models");
 class EnrollmentController {
     static async enrollCourse(ctx) {
         const { userId, courseId } = ctx.params;

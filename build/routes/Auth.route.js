@@ -4,11 +4,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable @typescript-eslint/no-unused-vars */
-const Auth_controller_1 = __importDefault(require("@/controllers/Auth.controller"));
-const checkSignUp_1 = __importDefault(require("@/middlewares/checkSignUp"));
+const Auth_controller_1 = __importDefault(require("../controllers/Auth.controller"));
+const checkSignUp_1 = __importDefault(require("../middlewares/checkSignUp"));
 const router_1 = __importDefault(require("@koa/router"));
-const verifyLogin_1 = __importDefault(require("@/middlewares/verifyLogin"));
-const requireAuth_1 = __importDefault(require("@/middlewares/requireAuth"));
+const verifyLogin_1 = __importDefault(require("../middlewares/verifyLogin"));
+const requireAuth_1 = __importDefault(require("../middlewares/requireAuth"));
 const router = new router_1.default({ prefix: '/auth' });
 // .get('/login', renderer('pages/auth/login'))
 // .get('/register', renderer('pages/auth/register'))

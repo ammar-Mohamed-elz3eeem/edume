@@ -1,16 +1,16 @@
 "use strict";
-// import Answer from '@/models/Answer.model';
-// import Course from '@/models/Course.model';
-// import Enrollment from '@/models/Enrollment.model';
-// import Feedback from '@/models/Feedback.model';
-// import Group from '@/models/Group.model';
-// import Lesson from '@/models/Lesson.model';
-// import Question from '@/models/Question.model';
-// import Quiz from '@/models/Quiz.model';
-// import Resource from '@/models/Resource.model';
-// import Tag from '@/models/Tag.model';
+// import Answer from '../models/Answer.model';
+// import Course from '../models/Course.model';
+// import Enrollment from '../models/Enrollment.model';
+// import Feedback from '../models/Feedback.model';
+// import Group from '../models/Group.model';
+// import Lesson from '../models/Lesson.model';
+// import Question from '../models/Question.model';
+// import Quiz from '../models/Quiz.model';
+// import Resource from '../models/Resource.model';
+// import Tag from '../models/Tag.model';
 Object.defineProperty(exports, "__esModule", { value: true });
-const models_1 = require("@/models");
+const models_1 = require("../models");
 class CourseController {
     static async addCourse(ctx) {
         const { description, title, courseTags, quizzies, createdBy, lessons, resources, } = ctx.request.body;
