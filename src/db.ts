@@ -19,6 +19,12 @@ if (process.env.NODE_ENV !== 'test') {
       idle: 5000,
       max: 10,
     },
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
   });
 }
 
