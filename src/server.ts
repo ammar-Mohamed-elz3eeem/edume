@@ -58,7 +58,17 @@ app.keys = [process.env.APP_SECRET_KEY || 'secret'];
 require('./utils/auth');
 app.use(morgan('dev'));
 
-app.use(session({ sameSite: 'strict', store: redisStore({}) }, app));
+app.use(
+  session(
+    {
+      sameSite: 'strict',
+      store: redisStore({
+        url: process.env.REDIS_URL,
+      }),
+    },
+    app,
+  ),
+);
 
 app.use(passport.initialize());
 app.use(passport.session());
