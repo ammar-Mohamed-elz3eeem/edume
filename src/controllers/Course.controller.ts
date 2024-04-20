@@ -82,7 +82,7 @@ export default class CourseController {
                 src = ctx.request.files![0].newFilename;
               }
               lessons[Number(lessonId)].attachments = [
-                ...lessons[Number(lessonId)].attachments,
+                ...lessons[Number(lessonId)].attachments!,
                 {
                   src: src,
                   type: 'image',

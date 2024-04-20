@@ -6,6 +6,7 @@
   "scripts": {
     "test": "set NODE_ENV='test' && jest --watchAll --runInBand --detectOpenHandles ./src/__tests__/routes",
     "lint": "eslint . --fix",
+    "start": "tsc --build",
     "dev": "set NODE_ENV='prod' && npm run lint && ts-node-dev -r tsconfig-paths/register ./src/server.ts --watch"
   },
   "keywords": [],

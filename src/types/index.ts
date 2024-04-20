@@ -3,7 +3,7 @@ export interface ICourse {
   title: string;
   description: string;
   createdBy: string | number;
-  featuredImage: string | File | File[];
+  featuredImage?: string | File | File[];
   courseTags?: ITag[];
   lessons?: ILesson[];
   quizzies?: IQuiz[];
@@ -36,7 +36,7 @@ export interface ILesson {
   courseId?: string | number;
   title: string;
   content: string;
-  attachments: IAttachment[];
+  attachments?: IAttachment[];
 }
 
 export interface IAttachment {

@@ -1,5 +1,5 @@
 import request from 'supertest';
-import app from '@/app';
+import app from '@/server';
 
 test('Hello world works', async () => {
   const response = await request(app.callback()).get('/');
