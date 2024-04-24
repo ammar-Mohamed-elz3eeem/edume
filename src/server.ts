@@ -65,7 +65,7 @@ app.use(
       store: redisStore({
         url: process.env.REDIS_URL,
       }),
-      secure: process.env.NODE_ENV !== 'development',
+      secure: false,
     },
     app,
   ),
