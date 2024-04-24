@@ -18,7 +18,7 @@ export default async function checkSignUp(ctx: Context, next: Next) {
     role,
   } = ctx.request.body as IUser;
   console.log('REQUEST BODY:', ctx.request.body);
-  if (!username || !password || !firstName || !password || !email || !dob) {
+  if (!username || !password || !firstName || !email || !dob) {
     ctx.throw(400, 'all fields are required');
   }
   if (password !== confirm_password) {
@@ -44,7 +44,6 @@ export default async function checkSignUp(ctx: Context, next: Next) {
     return passport.authenticate('local', async (err, user, info, status) => {
       if (user) {
         await ctx.login(user);
-        ctx.method = 'GET';
         ctx.body = user;
       } else {
         ctx.status = 400;

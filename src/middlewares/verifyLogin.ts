@@ -8,7 +8,6 @@ export default async function verifyLogin(ctx: Context, next: Next) {
     async (err, user, info, status) => {
       if (user) {
         await ctx.login(user);
-        ctx.method = 'GET';
         ctx.body = user;
         await next();
       } else {
