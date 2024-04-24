@@ -61,10 +61,11 @@ app.use(morgan('dev'));
 app.use(
   session(
     {
-      sameSite: 'strict',
+      sameSite: 'none',
       store: redisStore({
         url: process.env.REDIS_URL,
       }),
+      secure: process.env.NODE_ENV !== 'development',
     },
     app,
   ),
