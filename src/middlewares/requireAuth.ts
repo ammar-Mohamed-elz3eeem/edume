@@ -7,6 +7,7 @@ export default async function requireAuth(
   ctx: UploadContext,
   next: Next,
 ): Promise<IMiddleware> {
+  console.log('ctx.session', ctx.session);
   if (ctx.session && ctx.session?.passport && ctx.session.passport.user) {
     return await next();
   } else {
