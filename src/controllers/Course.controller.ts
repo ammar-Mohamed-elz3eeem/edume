@@ -39,7 +39,7 @@ export default class CourseController {
     } = ctx.request.body as ICourse;
 
     let image = '';
-    if (!(ctx.request.files instanceof Array)) {
+    if (ctx.request.files && !(ctx.request.files instanceof Array)) {
       image = (
         ctx.request.files!['featuredImage'] as unknown as {
           [k: string]: string;

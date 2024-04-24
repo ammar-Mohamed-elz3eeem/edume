@@ -17,6 +17,7 @@ const Course = sequelize.define('Course', {
   },
   featuredImage: {
     type: DataTypes.STRING,
+    allowNull: false,
   },
   createdBy: {
     type: DataTypes.INTEGER,
