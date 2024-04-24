@@ -18,7 +18,7 @@ export default async function checkSignUp(ctx: Context, next: Next) {
     role,
   } = ctx.request.body as IUser;
   console.log('REQUEST BODY:', ctx.request.body);
-  if (!username || !password || !firstName || !email || !dob) {
+  if (!username || !password || !firstName || !password || !email || !dob) {
     ctx.throw(400, 'all fields are required');
   }
   if (password !== confirm_password) {
