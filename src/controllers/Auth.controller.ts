@@ -6,6 +6,5 @@ export default class AuthController {
   static async logUserOut(ctx: Context, next: Next) {
     await ctx.logout();
     ctx.response.redirect('/auth');
-    await next();
   }
 }
