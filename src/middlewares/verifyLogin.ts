@@ -9,10 +9,9 @@ export default async function verifyLogin(ctx: Context, next: Next) {
       if (user) {
         await ctx.login(user);
         ctx.body = user;
-        await next();
       } else {
         ctx.status = 400;
-        ctx.body = { status: 'Invalid credentials' };
+        ctx.body = { status: 'error' };
       }
     },
   )(ctx, next);
